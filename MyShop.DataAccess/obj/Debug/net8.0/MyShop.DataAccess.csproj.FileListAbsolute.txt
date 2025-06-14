@@ -1,0 +1,12 @@
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\bin\Debug\net8.0\MyShop.DataAccess.deps.json
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\bin\Debug\net8.0\MyShop.DataAccess.dll
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\bin\Debug\net8.0\MyShop.DataAccess.pdb
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\obj\Debug\net8.0\MyShop.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\obj\Debug\net8.0\MyShop.DataAccess.AssemblyInfoInputs.cache
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\obj\Debug\net8.0\MyShop.DataAccess.AssemblyInfo.cs
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\obj\Debug\net8.0\MyShop.DataAccess.csproj.CoreCompileInputs.cache
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\obj\Debug\net8.0\MyShop.DataAccess.sourcelink.json
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\obj\Debug\net8.0\MyShop.DataAccess.dll
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\obj\Debug\net8.0\refint\MyShop.DataAccess.dll
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\obj\Debug\net8.0\MyShop.DataAccess.pdb
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\obj\Debug\net8.0\ref\MyShop.DataAccess.dll

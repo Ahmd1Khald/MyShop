@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Coding\\My Projects\\MyShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAA92136-7708-4DC9-8225-5C878B8F6A32}|MyShop.Entities\\MyShop.Entities.csproj|d:\\coding\\my projects\\myshop\\myshop.entities\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAA92136-7708-4DC9-8225-5C878B8F6A32}|MyShop.Entities\\MyShop.Entities.csproj|solutionrelative:myshop.entities\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|d:\\coding\\my projects\\myshop\\myshop.web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|solutionrelative:myshop.web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{718D2D46-8B54-44BE-B7D2-02C83E7B921F}|MyShop.DataAccess\\MyShop.DataAccess.csproj|d:\\coding\\my projects\\myshop\\myshop.dataaccess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{718D2D46-8B54-44BE-B7D2-02C83E7B921F}|MyShop.DataAccess\\MyShop.DataAccess.csproj|solutionrelative:myshop.dataaccess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|d:\\coding\\my projects\\myshop\\myshop.web\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|solutionrelative:myshop.web\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|d:\\coding\\my projects\\myshop\\myshop.web\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|solutionrelative:myshop.web\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|d:\\coding\\my projects\\myshop\\myshop.web\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|solutionrelative:myshop.web\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|d:\\coding\\my projects\\myshop\\myshop.web\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|solutionrelative:myshop.web\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,28 +58,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Coding\\My Projects\\MyShop\\MyShop.Entities\\Class1.cs",
-              "RelativeDocumentMoniker": "MyShop.Entities\\Class1.cs",
-              "ToolTip": "D:\\Coding\\My Projects\\MyShop\\MyShop.Entities\\Class1.cs",
-              "RelativeToolTip": "MyShop.Entities\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T19:27:44.728Z",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Views\\Category\\Delete.cshtml",
+              "RelativeDocumentMoniker": "MyShop.Web\\Views\\Category\\Delete.cshtml",
+              "ToolTip": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Views\\Category\\Delete.cshtml",
+              "RelativeToolTip": "MyShop.Web\\Views\\Category\\Delete.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-14T23:15:41.792Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Coding\\My Projects\\MyShop\\MyShop.DataAccess\\Class1.cs",
-              "RelativeDocumentMoniker": "MyShop.DataAccess\\Class1.cs",
-              "ToolTip": "D:\\Coding\\My Projects\\MyShop\\MyShop.DataAccess\\Class1.cs",
-              "RelativeToolTip": "MyShop.DataAccess\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Views\\Category\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MyShop.Web\\Views\\Category\\Edit.cshtml",
+              "ToolTip": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Views\\Category\\Edit.cshtml",
+              "RelativeToolTip": "MyShop.Web\\Views\\Category\\Edit.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwBUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-14T22:58:16.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Views\\Category\\Create.cshtml",
+              "RelativeDocumentMoniker": "MyShop.Web\\Views\\Category\\Create.cshtml",
+              "ToolTip": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Views\\Category\\Create.cshtml",
+              "RelativeToolTip": "MyShop.Web\\Views\\Category\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-14T22:21:32.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "MyShop.Web\\Views\\Category\\Index.cshtml",
+              "ToolTip": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "MyShop.Web\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-14T21:45:25.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "MyShop.Web\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "MyShop.Web\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T19:26:33.386Z",
+              "WhenOpened": "2025-06-14T21:44:05.031Z",
               "EditorCaption": ""
             }
           ]
