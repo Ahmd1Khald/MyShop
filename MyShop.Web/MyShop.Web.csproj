@@ -16,4 +16,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MyShop.DataAccess\MyShop.DataAccess.csproj" />
+    <ProjectReference Include="..\MyShop.Entities\MyShop.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

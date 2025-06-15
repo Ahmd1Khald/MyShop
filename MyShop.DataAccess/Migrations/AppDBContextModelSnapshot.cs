@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MyShop.Web.Date;
+using MyShop.DataAccess;
 
 #nullable disable
 
 namespace MyShop.Web.Migrations
 {
-    [DbContext(typeof(AppDBContext))]
+    [DbContext(typeof(ApplicationDBContext))]
     partial class AppDBContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

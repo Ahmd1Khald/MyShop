@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MyShop.Web.Models;
+using MyShop.Entities.Models;
 
-namespace MyShop.Web.Date
+namespace MyShop.DataAccess
 {
-    public class AppDBContext : DbContext
+    public class ApplicationDBContext : DbContext
     {
-        public AppDBContext(DbContextOptions options) : base(options)
+        public ApplicationDBContext(DbContextOptions options) : base(options)
         {
         }
 

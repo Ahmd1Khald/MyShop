@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MyShop.Web.Date;
+using MyShop.DataAccess;
 using System;
 
 namespace MyShop.Web
@@ -17,7 +17,7 @@ namespace MyShop.Web
             builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
             // For Connection String
-            builder.Services.AddDbContext<AppDBContext>(options =>
+            builder.Services.AddDbContext<ApplicationDBContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("Defualt"))
             );
 

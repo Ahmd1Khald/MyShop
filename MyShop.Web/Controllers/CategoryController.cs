@@ -1,15 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyShop.Web.Date;
-using MyShop.Web.Models;
+using MyShop.Entities.Models;
+using MyShop.DataAccess;
+
 
 namespace MyShop.Web.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly AppDBContext _dbContext;
+        private readonly ApplicationDBContext _dbContext;
 
         // Constructor injection
-        public CategoryController(AppDBContext dbContext)
+        public CategoryController(ApplicationDBContext dbContext)
         {
             _dbContext = dbContext;
         }

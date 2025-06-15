@@ -1661,6 +1661,31 @@
             "rid": "win"
           }
         }
+      },
+      "MyShop.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.6",
+          "MyShop.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyShop.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyShop.DataAccess.dll": {}
+        }
+      },
+      "MyShop.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MyShop.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyShop.Entities.dll": {}
+        }
       }
     }
   },
@@ -4831,6 +4856,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "MyShop.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../MyShop.DataAccess/MyShop.DataAccess.csproj",
+      "msbuildProject": "../MyShop.DataAccess/MyShop.DataAccess.csproj"
+    },
+    "MyShop.Entities/1.0.0": {
+      "type": "project",
+      "path": "../MyShop.Entities/MyShop.Entities.csproj",
+      "msbuildProject": "../MyShop.Entities/MyShop.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4838,7 +4873,9 @@
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 8.0.17",
       "Microsoft.EntityFrameworkCore >= 9.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.6",
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.6"
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.6",
+      "MyShop.DataAccess >= 1.0.0",
+      "MyShop.Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4868,7 +4905,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Coding\\My Projects\\MyShop\\MyShop.DataAccess\\MyShop.DataAccess.csproj": {
+              "projectPath": "D:\\Coding\\My Projects\\MyShop\\MyShop.DataAccess\\MyShop.DataAccess.csproj"
+            },
+            "D:\\Coding\\My Projects\\MyShop\\MyShop.Entities\\MyShop.Entities.csproj": {
+              "projectPath": "D:\\Coding\\My Projects\\MyShop\\MyShop.Entities\\MyShop.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

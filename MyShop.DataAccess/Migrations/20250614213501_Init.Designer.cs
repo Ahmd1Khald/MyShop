@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MyShop.Web.Date;
+using MyShop.DataAccess;
 
 #nullable disable
 
 namespace MyShop.Web.Migrations
 {
-    [DbContext(typeof(AppDBContext))]
+    [DbContext(typeof(ApplicationDBContext))]
     [Migration("20250614213501_Init")]
     partial class Init
     {
