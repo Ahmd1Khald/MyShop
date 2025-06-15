@@ -1,7 +1,10 @@
 ﻿@model IEnumerable<Category>
 
-<h3>Categories List</h3>
-
+@{
+    ViewBag.PageTitle = "Category Management";
+    ViewBag.CardTitle = "View Category";
+    Layout = "_Dashboard";
+}
 <table class="table table-hover" width="100%">
     <tr>
         <th>
@@ -12,6 +15,9 @@
         </th>
         <th>
             Date Created
+        </th>
+        <th>
+            Actions
         </th>
     </tr>
     @foreach (Category item in Model)
