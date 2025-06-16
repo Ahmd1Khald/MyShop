@@ -1,18 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyShop.Entities.Models;
 using MyShop.DataAccess;
+using MyShop.Entities.Repositories;
 
 
 namespace MyShop.Web.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ApplicationDBContext _dbContext;
+        //private readonly ApplicationDBContext _dbContext;
+        private IUnitOfWork _unitOfWork;
 
         // Constructor injection
-        public CategoryController(ApplicationDBContext dbContext)
+        public CategoryController(/*ApplicationDBContext dbContext*/ IUnitOfWork unitOfWork)
         {
-            _dbContext = dbContext;
+            //_dbContext = dbContext;
+            _unitOfWork = unitOfWork;
         }
 
         #region CURD Operations
