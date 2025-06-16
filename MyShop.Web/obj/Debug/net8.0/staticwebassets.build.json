@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OQExONyT+11lezcabC847TakwfUbsBFSCwl5OL7w31w=",
+  "Hash": "LsadUUsgIIo1FBbgBLGCk5cYYOFYamoS7UkargWgRYY=",
   "Source": "MyShop.Web",
   "BasePath": "_content/MyShop.Web",
   "Mode": "Default",
@@ -623,6 +623,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\Images\\Products\\2b13225f-a3e6-48be-883d-a53317e673d8.png",
+      "SourceId": "MyShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\",
+      "BasePath": "_content/MyShop.Web",
+      "RelativePath": "Images/Products/2b13225f-a3e6-48be-883d-a53317e673d8.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\2b13225f-a3e6-48be-883d-a53317e673d8.png"
     },
     {
       "Identity": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\img\\AdminLTELogo.png",

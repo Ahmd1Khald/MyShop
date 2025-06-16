@@ -11,11 +11,13 @@ namespace MyShop.DataAccess.Implementaions
     {
         private readonly ApplicationDBContext _dbContext;
         public ICategoryRepository Category { get; private set; }
+        public IProductRepository Product { get; private set; }
 
         public UnitOfWork(ApplicationDBContext dbContext)
         {
             _dbContext = dbContext;
             Category = new CategoryRepository(dbContext);
+            Product = new ProductRepository(dbContext);
         }
         
         public int Complete()

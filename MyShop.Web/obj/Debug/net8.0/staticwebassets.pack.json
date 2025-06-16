@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\MyShop.Web.bundle.scp.css"
     },
     {
+      "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\Images\\Products\\2b13225f-a3e6-48be-883d-a53317e673d8.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\2b13225f-a3e6-48be-883d-a53317e673d8.png"
+    },
+    {
       "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\css\\adminlte.css",
       "PackagePath": "staticwebassets\\css\\adminlte.css"
     },
