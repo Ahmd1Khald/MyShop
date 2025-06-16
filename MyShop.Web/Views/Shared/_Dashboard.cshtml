@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/css/adminlte.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
 </head>
 <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
@@ -292,6 +295,27 @@
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <!-- Toastr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+        @if (TempData["Deleted"] != null)
+        {
+            <text>toastr.error("@TempData["Deleted"]");</text>
+        }
+        @if (TempData["Create"] != null)
+        {
+            <text>toastr.success("@TempData["Create"]");</text>
+        }
+        @if (TempData["Updated"] != null)
+        {
+            <text>toastr.info("@TempData["Updated"]");</text>
+        }
+            });
+    </script>
+
+
 
 </body>
 </html>

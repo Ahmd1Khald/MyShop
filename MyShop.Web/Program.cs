@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MyShop.DataAccess;
+using MyShop.DataAccess.Implementaions;
+using MyShop.Entities.Repositories;
 using System;
 
 namespace MyShop.Web
@@ -20,6 +22,9 @@ namespace MyShop.Web
             builder.Services.AddDbContext<ApplicationDBContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("Defualt"))
             );
+
+            // Add services for UnitOFWork
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             var app = builder.Build();
 

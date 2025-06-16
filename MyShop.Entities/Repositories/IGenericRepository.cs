@@ -11,11 +11,11 @@ namespace MyShop.Entities.Repositories
     {
         // _dbContext.Categories.Include("Products").ToList();
         // _dbContext.Categories.Where(x=>x.Id == id).ToList();
-        IEnumerable<T> GetAll(Expression<Func<T,bool>> predicate, string? includeWord);
+        IEnumerable<T> GetAll(Expression<Func<T,bool>>? predicate = null, string? includeWord = null);
 
         // _dbContext.Categories.Include("Products").SingleOrDefualt();
         // _dbContext.Categories.Where(x=>x.Id == id).SingleOrDefualt();
-        T GetFirstOrDefualt(Expression<Func<T, bool>> predicate, string? includeWord);
+        T GetFirstOrDefualt(Expression<Func<T, bool>>? predicate = null, string? includeWord = null);
 
         // _dbContext.Categories.Add(entity);
         void Add(T entity);

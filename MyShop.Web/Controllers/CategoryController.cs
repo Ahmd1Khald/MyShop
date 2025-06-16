@@ -33,8 +33,12 @@ namespace MyShop.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                _dbContext.Categories.Add(category);
-                _dbContext.SaveChanges();
+                //_dbContext.Categories.Add(category);
+                //_dbContext.SaveChanges();
+                _unitOfWork.Category.Add(category);
+                _unitOfWork.Complete();
+
+                TempData["Create"] = "Item was Created Successfully";
                 return RedirectToAction("Index");
             }
             return View(category);
@@ -44,7 +48,8 @@ namespace MyShop.Web.Controllers
         #region Read
         public IActionResult Index()
         {
-            List<Category> category = _dbContext.Categories.ToList();
+            //List<Category> category = _dbContext.Categories.ToList();
+            var category = _unitOfWork.Category.GetAll();
             return View(category);
         }
         #endregion
@@ -53,7 +58,8 @@ namespace MyShop.Web.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var category = _dbContext.Categories.FirstOrDefault(c => c.Id == id);
+            //var category = _dbContext.Categories.FirstOrDefault(c => c.Id == id);
+            var category = _unitOfWork.Category.GetFirstOrDefualt(c => c.Id == id);
             if (category == null)
             {
                 return NotFound();
@@ -66,8 +72,12 @@ namespace MyShop.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                _dbContext.Categories.Update(category);
-                _dbContext.SaveChanges();
+                //_dbContext.Categories.Update(category);
+                //_dbContext.SaveChanges();
+                _unitOfWork.Category.update(category);
+                _unitOfWork.Complete();
+
+                TempData["Updated"] = "Item was Updated Successfully";
                 return RedirectToAction("Index");
             }
             return View(category);
@@ -78,7 +88,8 @@ namespace MyShop.Web.Controllers
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            var category = _dbContext.Categories.FirstOrDefault(c => c.Id == id);
+            //var category = _dbContext.Categories.FirstOrDefault(c => c.Id == id);
+            var category = _unitOfWork.Category.GetFirstOrDefualt(c => c.Id == id);
             if (category == null)
             {
                 return NotFound();
@@ -89,8 +100,13 @@ namespace MyShop.Web.Controllers
         [HttpPost]
         public IActionResult Delete(Category category)
         {
-            _dbContext.Categories.Remove(category);
-            _dbContext.SaveChanges();
+            //_dbContext.Categories.Remove(category);
+            //_dbContext.SaveChanges();
+
+            _unitOfWork.Category.Remove(category);
+            _unitOfWork.Complete();
+
+            TempData["Deleted"] = "Item was Deleted Successfully";
             return RedirectToAction("Index");
         }
         #endregion
