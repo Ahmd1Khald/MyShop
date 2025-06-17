@@ -296,26 +296,13 @@
     <script src="../../dist/js/adminlte.min.js"></script>
     <!-- DataTables -->
     <script src="//cdn.datatables.net/2.3.2/js/dataTables.min.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
     <!-- Toastr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    @await Html.PartialAsync("_toaster")
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script>
-        $(document).ready(function () {
-        @if (TempData["Deleted"] != null)
-        {
-            <text>toastr.error("@TempData["Deleted"]");</text>
-        }
-        @if (TempData["Create"] != null)
-        {
-            <text>toastr.success("@TempData["Create"]");</text>
-        }
-        @if (TempData["Updated"] != null)
-        {
-            <text>toastr.info("@TempData["Updated"]");</text>
-        }
-            });
-    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+    
 
 
 

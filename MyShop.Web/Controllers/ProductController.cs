@@ -166,29 +166,30 @@ namespace MyShop.Web.Controllers
         #endregion
 
         #region Delete
-        [HttpGet]
-        public IActionResult Delete(int id)
-        {
-            //var product = _dbContext.Products.FirstOrDefault(c => c.Id == id);
-            var product = _unitOfWork.Product.GetFirstOrDefualt(c => c.Id == id);
-            if (product == null)
-            {
-                return NotFound();
-            }
-            return View(product);
-        }
 
-        [HttpPost]
-        public IActionResult Delete(Product product)
+        [HttpDelete]
+        public IActionResult Delete(int? id)
         {
             //_dbContext.Products.Remove(product);
             //_dbContext.SaveChanges();
 
-            _unitOfWork.Product.Remove(product);
-            _unitOfWork.Complete();
+            var productInDb = _unitOfWork.Product.GetFirstOrDefualt(x=>x.Id == id);
+            if (productInDb == null)
+            {
+                return Json(new {success = false,message = "Error While Deleting" });
+            }
 
-            TempData["Deleted"] = "Item was Deleted Successfully";
-            return RedirectToAction("Index");
+            _unitOfWork.Product.Remove(productInDb);
+            // Remove the old image from resources
+            var oldImage = Path.Combine(_webHostEnvironment.WebRootPath, productInDb.Image.TrimStart('\\'));
+            if (System.IO.File.Exists(oldImage))
+            {
+                System.IO.File.Delete(oldImage);
+            }
+
+
+            _unitOfWork.Complete();
+            return Json(new { success = true, message = "Product has been Deleted" });
         }
         #endregion
 

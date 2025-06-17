@@ -1,0 +1,18 @@
+﻿<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+        @if (TempData["Deleted"] != null)
+        {
+            <text>toastr.error("@TempData["Deleted"]");</text>
+        }
+        @if (TempData["Create"] != null)
+        {
+            <text>toastr.success("@TempData["Create"]");</text>
+        }
+        @if (TempData["Updated"] != null)
+        {
+            <text>toastr.info("@TempData["Updated"]");</text>
+        }
+            });
+    </script>

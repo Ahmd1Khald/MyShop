@@ -28,6 +28,7 @@
     <div class="mb-3">
         <label asp-for="Product.Image"></label>
         <input type="file" name="file" id="file" class="form-control" />
+        <span asp-validation-for="Product.Image" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
