@@ -25,6 +25,7 @@ namespace MyShop.DataAccess.Implementaions
                 categoryInDB.Description = category.Description;
                 categoryInDB.Price = category.Price;
                 categoryInDB.Image = category.Image;
+                categoryInDB.CategoryId = category.CategoryId;
             }
         }
     }

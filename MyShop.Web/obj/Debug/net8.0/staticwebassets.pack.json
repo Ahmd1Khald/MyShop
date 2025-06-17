@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\Images\\Products\\2b13225f-a3e6-48be-883d-a53317e673d8.png"
     },
     {
+      "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\Images\\Products\\794fbee2-34a6-458f-b82b-0e02218992d8.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\794fbee2-34a6-458f-b82b-0e02218992d8.png"
+    },
+    {
+      "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\Images\\Products\\9241086c-f305-4014-a821-c50c5d7bf25e.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\9241086c-f305-4014-a821-c50c5d7bf25e.jpg"
+    },
+    {
       "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\css\\adminlte.css",
       "PackagePath": "staticwebassets\\css\\adminlte.css"
     },
@@ -243,6 +251,10 @@
     {
       "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\js\\.eslintrc.json",
       "PackagePath": "staticwebassets\\js\\.eslintrc.json"
+    },
+    {
+      "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\js\\Products.js",
+      "PackagePath": "staticwebassets\\js\\Products.js"
     },
     {
       "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\js\\adminlte.js",

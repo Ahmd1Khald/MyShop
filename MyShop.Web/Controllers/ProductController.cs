@@ -82,38 +82,86 @@ namespace MyShop.Web.Controllers
         public IActionResult Index()
         {
             //List<Product> product = _dbContext.Products.ToList();
-            var product = _unitOfWork.Product.GetAll();
-            return View(product);
+            //var product = _unitOfWork.Product.GetAll();
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult GetData()
+        {
+            var categories = _unitOfWork.Product.GetAll(includeWord:"Category");
+            return Json(new {data = categories });
         }
         #endregion
 
         #region Update
         [HttpGet]
-        public IActionResult Edit(int id)
+        public IActionResult Edit(int? id)
         {
-            //var product = _dbContext.Products.FirstOrDefault(c => c.Id == id);
-            var product = _unitOfWork.Product.GetFirstOrDefualt(c => c.Id == id);
-            if (product == null)
+            if (id == 0 || id == null)
             {
                 return NotFound();
             }
-            return View(product);
+            //var product = _dbContext.Products.FirstOrDefault(c => c.Id == id);
+            var product = _unitOfWork.Product.GetFirstOrDefualt(c => c.Id == id);
+
+            ProductVM productVM = new ProductVM()
+            {
+                Product = product,
+                CategoryList = _unitOfWork.Category.GetAll().Select(x => new SelectListItem
+                {
+
+                    Text = x.Name,
+                    Value = x.Id.ToString()
+                })
+            };
+            
+            return View(productVM);
         }
 
         [HttpPost]
-        public IActionResult Edit(Product product)
+        public IActionResult Edit(ProductVM productVM,IFormFile? file)
         {
             if (ModelState.IsValid)
             {
+                //WWWRoot path
+                string RootPath = _webHostEnvironment.WebRootPath;
+
+                if (file != null)
+                {
+                    // Generate random number
+                    string fileName = Guid.NewGuid().ToString();
+                    // Path
+                    var Uploud = Path.Combine(RootPath, @"Images\Products");
+                    // extention EX:jpg
+                    var ext = Path.GetExtension(file.FileName);
+
+                    if (productVM.Product.Image != null)
+                    {
+                        // Remove the old image from resources
+                        var oldImage = Path.Combine(RootPath,productVM.Product.Image.TrimStart('\\'));
+                        if (System.IO.File.Exists(oldImage))
+                        {
+                            System.IO.File.Delete(oldImage);
+                        }
+
+                    }
+                    // Upload file with random name and extension
+                    using (var filestream = new FileStream(Path.Combine(Uploud, fileName + ext), FileMode.Create))
+                    {
+                        file.CopyTo(filestream);
+                    }
+                    productVM.Product.Image = @"Images\Products\" + fileName + ext;
+                }
                 //_dbContext.Products.Update(product);
                 //_dbContext.SaveChanges();
-                _unitOfWork.Product.update(product);
+                _unitOfWork.Product.update(productVM.Product);
                 _unitOfWork.Complete();
 
                 TempData["Updated"] = "Item was Updated Successfully";
                 return RedirectToAction("Index");
             }
-            return View(product);
+            return View(productVM.Product);
         }
         #endregion
 
