@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyShop.Entities.Repositories;
+using MyShop.Entities.ViewModels;
 
 namespace MyShop.Web.Areas.Customer.Controllers
 {
@@ -17,6 +18,17 @@ namespace MyShop.Web.Areas.Customer.Controllers
         {
             var products = _unitOfWork.Product.GetAll();
             return View(products);
+        }
+
+        public IActionResult ProductDetails(int id)
+        {
+            var product = _unitOfWork.Product.GetFirstOrDefualt(x=>x.Id == id,includeWord:"Category");
+            ShoppingCart shoppingCart = new ShoppingCart()
+            {
+                Product = product,
+                Count = 1,
+            };
+            return View(shoppingCart);
         }
     }
 }
