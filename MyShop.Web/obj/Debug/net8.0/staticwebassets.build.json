@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T7dXyTaoX79u0yQeV9m2yHcXYFOjieRfyev8UjtqNnA=",
+  "Hash": "+qcmycd/zMktleG0RvryWs2DuFG40iE5rLa7Zz3cg1k=",
   "Source": "MyShop.Web",
   "BasePath": "_content/MyShop.Web",
   "Mode": "Default",
@@ -701,6 +701,25 @@
       "OriginalItemSpec": "wwwroot\\Images\\Products\\00a53eb3-9942-40cb-b1f8-a2c9fb1da297.png"
     },
     {
+      "Identity": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\Images\\Products\\283a589d-62c7-4ad5-b10a-970c05cbc9cd.jpg",
+      "SourceId": "MyShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\",
+      "BasePath": "_content/MyShop.Web",
+      "RelativePath": "Images/Products/283a589d-62c7-4ad5-b10a-970c05cbc9cd.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\283a589d-62c7-4ad5-b10a-970c05cbc9cd.jpg"
+    },
+    {
       "Identity": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\Images\\Products\\8e4c8c70-eb26-45eb-847f-d36491675d0d.jpg",
       "SourceId": "MyShop.Web",
       "SourceType": "Discovered",
@@ -718,25 +737,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\8e4c8c70-eb26-45eb-847f-d36491675d0d.jpg"
-    },
-    {
-      "Identity": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\Images\\Products\\fcbdc280-bf12-4abf-a1bf-ec0c19043db5.png",
-      "SourceId": "MyShop.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\",
-      "BasePath": "_content/MyShop.Web",
-      "RelativePath": "Images/Products/fcbdc280-bf12-4abf-a1bf-ec0c19043db5.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Products\\fcbdc280-bf12-4abf-a1bf-ec0c19043db5.png"
     },
     {
       "Identity": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\img\\AdminLTELogo.png",
