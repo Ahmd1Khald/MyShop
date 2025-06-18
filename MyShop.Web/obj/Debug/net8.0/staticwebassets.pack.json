@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\MyShop.Web.bundle.scp.css"
     },
     {
+      "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\Images\\Products\\00a53eb3-9942-40cb-b1f8-a2c9fb1da297.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\00a53eb3-9942-40cb-b1f8-a2c9fb1da297.png"
+    },
+    {
       "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\Images\\Products\\8e4c8c70-eb26-45eb-847f-d36491675d0d.jpg",
       "PackagePath": "staticwebassets\\Images\\Products\\8e4c8c70-eb26-45eb-847f-d36491675d0d.jpg"
+    },
+    {
+      "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\Images\\Products\\fcbdc280-bf12-4abf-a1bf-ec0c19043db5.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\fcbdc280-bf12-4abf-a1bf-ec0c19043db5.png"
     },
     {
       "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\css\\adminlte.css",
@@ -123,6 +131,18 @@
     {
       "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\customer\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\customer\\assets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\customer\\css\\styles.css",
+      "PackagePath": "staticwebassets\\customer\\css\\styles.css"
+    },
+    {
+      "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\customer\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\customer\\js\\scripts.js"
     },
     {
       "Id": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\wwwroot\\favicon.ico",

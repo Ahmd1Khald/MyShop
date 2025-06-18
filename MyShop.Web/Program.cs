@@ -45,7 +45,22 @@ namespace MyShop.Web
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{area=Admin}/{controller=Home}/{action=Index}/{id?}");
+
+            app.MapControllerRoute(
+                name: "Customer",
+                pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
+
+            // Route for Areas (Admin, Customer, ...)
+            //app.MapControllerRoute(
+            //    name: "areas",
+            //    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+            //// Default route (if area not specified)
+            //app.MapControllerRoute(
+            //    name: "default",
+            //    pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
             app.Run();
         }

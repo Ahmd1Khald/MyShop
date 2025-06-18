@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 function loadData() {
     dataTable = $("#products-table").DataTable({
-        "ajax": { "url": "/Product/GetData" },
+        "ajax": { "url": "/Admin/Product/GetData" },
         "columns": [
             {"data":"name"},
             {"data":"description"},
@@ -15,8 +15,8 @@ function loadData() {
                 "data": "id",
                 "render": function (data) {
                     return `
-                            <a href="/Product/Edit/${data}" class="btn btn-success">Edit</a>
-                            <a onClick=deleteItem("/Product/Delete/${data}") class="btn btn-danger">Delete</a>
+                            <a href="/Admin/Product/Edit/${data}" class="btn btn-success">Edit</a>
+                            <a onClick=deleteItem("/Admin/Product/Delete/${data}") class="btn btn-danger">Delete</a>
                     `;
                 }
             }
