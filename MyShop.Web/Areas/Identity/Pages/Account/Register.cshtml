@@ -6,8 +6,10 @@
 
 <h1>@ViewData["Title"]</h1>
 
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-5">
         <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
             <h2>Create a new account.</h2>
             <hr />
@@ -78,6 +80,8 @@
         </section>
     </div>
 </div>
+    </div>
+</section>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
