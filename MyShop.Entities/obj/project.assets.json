@@ -4459,7 +4459,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\abokh\\.nuget\\packages\\": {}
+    "C:\\Users\\abokh\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -4470,8 +4471,12 @@
       "packagesPath": "C:\\Users\\abokh\\.nuget\\packages\\",
       "outputPath": "D:\\Coding\\My Projects\\MyShop\\MyShop.Entities\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages"
+      ],
       "configFilePaths": [
         "C:\\Users\\abokh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4479,6 +4484,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
