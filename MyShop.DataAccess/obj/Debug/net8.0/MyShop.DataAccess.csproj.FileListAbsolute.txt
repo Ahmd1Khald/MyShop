@@ -16,3 +16,5 @@ D:\Coding\My Projects\MyShop\MyShop.DataAccess\bin\Debug\net8.0\MyShop.Entities.
 D:\Coding\My Projects\MyShop\MyShop.DataAccess\bin\Debug\net8.0\MyShop.Entities.pdb
 D:\Coding\My Projects\MyShop\MyShop.DataAccess\obj\Debug\net8.0\MyShop.D.2D72841A.Up2Date
 D:\Coding\My Projects\MyShop\MyShop.DataAccess\obj\Debug\net8.0\MyShop.DataAccess.genruntimeconfig.cache
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\bin\Debug\net8.0\appsettings.Development.json
+D:\Coding\My Projects\MyShop\MyShop.DataAccess\bin\Debug\net8.0\appsettings.json

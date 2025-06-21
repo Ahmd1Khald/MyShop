@@ -4,6 +4,8 @@ using MyShop.DataAccess.Implementaions;
 using MyShop.Entities.Repositories;
 using System;
 using Microsoft.AspNetCore.Identity;
+using MyShop.Utilities;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace MyShop.Web
 {
@@ -24,10 +26,16 @@ namespace MyShop.Web
             options.UseSqlServer(builder.Configuration.GetConnectionString("Defualt"))
             );
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDBContext>();
+            builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddDefaultTokenProviders()
+                .AddEntityFrameworkStores<ApplicationDBContext>();
+
+            // Add services for EmailSender
+            builder.Services.AddSingleton<IEmailSender, EmailSender>();
 
             // Add services for UnitOFWork
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+
 
             var app = builder.Build();
 
