@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Coding\\My Projects\\MyShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|d:\\coding\\my projects\\myshop\\myshop.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|solutionrelative:myshop.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|d:\\coding\\my projects\\myshop\\myshop.web\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|solutionrelative:myshop.web\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|d:\\coding\\my projects\\myshop\\myshop.web\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|solutionrelative:myshop.web\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|d:\\coding\\my projects\\myshop\\myshop.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|solutionrelative:myshop.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|d:\\coding\\my projects\\myshop\\myshop.web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|solutionrelative:myshop.web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|d:\\coding\\my projects\\myshop\\myshop.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9989A603-3FB2-44CF-B67D-4BC4BB56530E}|MyShop.Web\\MyShop.Web.csproj|solutionrelative:myshop.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,26 +74,65 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Program.cs",
+              "RelativeDocumentMoniker": "MyShop.Web\\Program.cs",
+              "ToolTip": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Program.cs",
+              "RelativeToolTip": "MyShop.Web\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwB0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T16:50:05.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "MyShop.Web\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ToolTip": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "MyShop.Web\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T16:37:25.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "MyShop.Web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeToolTip": "MyShop.Web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wCkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T16:36:34.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "MyShop.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "ToolTip": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeToolTip": "MyShop.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAmwKEAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAmwKEAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T21:54:29.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "MyShop.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "ToolTip": "D:\\Coding\\My Projects\\MyShop\\MyShop.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeToolTip": "MyShop.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAACwAAAAAAAAAAAAcwD4AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwD4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-21T21:43:51.765Z",
               "EditorCaption": ""

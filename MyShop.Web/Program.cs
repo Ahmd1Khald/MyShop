@@ -26,7 +26,9 @@ namespace MyShop.Web
             options.UseSqlServer(builder.Configuration.GetConnectionString("Defualt"))
             );
 
-            builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddDefaultTokenProviders().AddDefaultUI()
+            builder.Services.AddIdentity<IdentityUser,IdentityRole>
+                (options=> options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromHours(2))
+                .AddDefaultTokenProviders().AddDefaultUI()
                 .AddEntityFrameworkStores<ApplicationDBContext>();
 
             // Add services for EmailSender
