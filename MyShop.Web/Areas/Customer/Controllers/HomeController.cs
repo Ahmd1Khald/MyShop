@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using MyShop.Entities.Models;
 using MyShop.Entities.Repositories;
 using MyShop.Entities.ViewModels;
+using System.Security.Claims;
 
 namespace MyShop.Web.Areas.Customer.Controllers
 {
@@ -20,15 +23,31 @@ namespace MyShop.Web.Areas.Customer.Controllers
             return View(products);
         }
 
-        public IActionResult ProductDetails(int id)
+        //[HttpGet("{ProductId:int}")]
+        public IActionResult ProductDetails(int ProductId)
         {
-            var product = _unitOfWork.Product.GetFirstOrDefualt(x=>x.Id == id,includeWord:"Category");
             ShoppingCart shoppingCart = new ShoppingCart()
             {
-                Product = product,
+                ProductId = ProductId,
+                Product = _unitOfWork.Product.GetFirstOrDefualt(x => x.Id == ProductId, includeWord: "Category"),
                 Count = 1,
             };
             return View(shoppingCart);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public IActionResult ProductDetails(ShoppingCart shoppingCart)
+        {
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            shoppingCart.ApplicationUserId = claim.Value;
+
+            _unitOfWork.ShoppingCart.Add(shoppingCart);
+            _unitOfWork.Complete();
+
+            return RedirectToAction("Index");
         }
     }
 }
